@@ -1,0 +1,42 @@
+.navbar{
+    width: 100%;
+
+
+}
+.navbar ul li{
+    
+    list-style: none;
+
+
+}
+.main{
+    padding-left: 220px;
+
+}
+
+  
+#home{
+    height: 820px;
+
+}
+.headings{
+    font-size: 1.7rem;
+
+}
+#pic img{
+    width: 300px;
+    height: 175px;
+
+}
+#intro h2{
+    font-size: 1.5rem;
+}
+
+.gallery img{
+    padding: 20px;
+}
+#send{
+    width: 20%;
+}
+
+

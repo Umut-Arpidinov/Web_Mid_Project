@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+        }
+        </script>
+    <link rel="stylesheet" media="screen and (max-width:767px)" href="tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:530px)" href="phone.css">
+
+</head>
+<body>
+    
+    <nav class="navbar">
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">About me</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Contact me</a>
+            </li>
+             </ul>
+             <div class="hamburger" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>  
+    </nav>
+    <section id="home">
+        <div class="main">
+            <h1 class="headings">I  AM <br> UMUT ARPIDINOV</h1>
+            <button class="btn">
+                HIRE ME
+            </button>
+
+        </div>
+    </section>
+
+    <section id="about">
+        <h1 class="headings">ABOUT ME</h1>
+        <div id="pic">
+            <img src ="img/seconddd.png" alt="">
+            <div id="intro">
+                <h2>My name is Umut Arpidinov. I'm an Ala-Too student at  Computer Science Department. I was born and raised in Batken.
+
+                    I am soon-to-be android developer. Always curious to learn new things. Nowodays I am doing my internship in local company in Kyrgyzstan.
+                    
+                    I like to travel. I believe travelling gives you a new perspective to everything. You get to know a lot about the different cultures, the cuisines, their history, the language and all the small unique things every place has to offer.</h2>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <h1 class="headings">Projects</h1>
+        <div class="gallery">
+            <img src="img/calculator_project.png" alt="">  
+            <img src="img/sokoban.png" alt="">
+            <img src="img/main.png" alt="">  
+        </div>
+    </section>
+    <section id="services">
+        <h1 class="headings">SERVICES</h1>
+            <div class="row">
+                <div class="box">
+                    <img src="img/android-logo-E109D453E3-seeklogo.com.png" alt="">
+                    <h1 class="headings">Website design</h1>
+                </div>
+                <div class="box">
+                    <img src="img/studio.png" alt="">
+                    <h1 class="headings">Android design</h1>
+
+                </div>
+                <div class="box">
+                    <img src="img/retrofit.png" alt="">
+                    <h1 class="headings">Digital Marketing</h1>
+                </div>
+                   
+            </div>
+        </h1>
+    </section>
+    <section id="contact">
+        <h1 class="headings">CONTACT</h1>
+        <form action="" class="form">
+            <input type="text" name="name" class="input" placeholder="Enter your name">
+            <input type="email" name="email" class="input"
+            placeholder="Enter your email">
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+            <input type="submit" value="SEND" id="send">
+        </form>
+    </section>
+
+
+<script src="script.js"></script>
+</body>
+</html>

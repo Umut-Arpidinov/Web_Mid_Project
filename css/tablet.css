@@ -1,0 +1,68 @@
+/*Headings*/
+
+.heading{
+    font-size: 1.5.rem;
+
+}
+.main{
+    padding-left: 300px;
+
+}
+
+.main h1{
+    font-size: 20px;
+    
+}
+
+/*About*/
+#pic{
+    flex-direction: column;
+    align-items: center;
+
+}
+#pic img{
+    width:475;
+    height:300px;
+
+}
+#intro h2{
+    text-align: center;
+    padding: 10px;
+
+}
+
+/*Contact*/
+
+.input{
+    width: 60%;
+
+
+}
+#msg{
+    width:55%;
+}
+.gallery img{
+    padding: 20px;
+}
+
+.hamburger{
+        display: block;
+        padding-left: 300px;
+    }
+
+.nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+}
+.nav-item{
+    margin: 16px 0 ;
+}
+.nav-menu.active{
+    left:0;
+
+}
+
+
