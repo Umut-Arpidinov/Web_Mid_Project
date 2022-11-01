@@ -9,14 +9,18 @@
 
 
 }
-.main{
+#main{
     padding-left: 220px;
-
+   padding-top: -200px;
 }
 
   
 #home{
-    height: 820px;
+    height: 440px;
+
+}
+#home::after{
+    height: 460px;
 
 }
 .headings{
@@ -37,6 +41,13 @@
 }
 #send{
     width: 20%;
+}
+
+#about img{
+    height: 100%;
+}
+#about {
+    height: 40%;
 }
 
 

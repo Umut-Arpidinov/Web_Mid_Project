@@ -5,14 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script>
         function myFunction(x) {
           x.classList.toggle("change");
         }
         </script>
-    <link rel="stylesheet" media="screen and (max-width:767px)" href="tablet.css">
-    <link rel="stylesheet" media="screen and (max-width:530px)" href="phone.css">
+    <link rel="stylesheet" media="screen and (max-width:800px)" href="css/tablet.css">
+    <link rel="stylesheet" media="screen and (max-width:530px)" href="css/phone.css">
 
 </head>
 <body>
@@ -23,16 +23,19 @@
                 <a href="#" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">About me</a>
+                <a href="#about" class="nav-link">About me</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Projects</a>
+                <a href="#projects" class="nav-link">Projects</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Services</a>
+                <a href="#services" class="nav-link">Services</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Contact me</a>
+                <a href="#contact" class="nav-link">Contact me</a>
+            </li>
+            <li class="nav-item">
+                <a href="#cats" class="nav-link">Cats</a>
             </li>
              </ul>
              <div class="hamburger" onclick="myFunction(this)">
@@ -42,29 +45,30 @@
               </div>  
     </nav>
     <section id="home">
-        <div class="main">
+        <div id="main">
             <h1 class="headings">I  AM <br> UMUT ARPIDINOV</h1>
-            <button class="btn">
-                HIRE ME
-            </button>
-
+            <p id="demo"></p>
+            <a href="mailto:ymytbek0314@gmail.com" id="btn">Hire me</a>
         </div>
     </section>
 
     <section id="about">
         <h1 class="headings">ABOUT ME</h1>
         <div id="pic">
-            <img src ="img/seconddd.png" alt="">
+            <img id="secondImage" src ="img/seconddd.png" alt="" >
             <div id="intro">
                 <h2>My name is Umut Arpidinov. I'm an Ala-Too student at  Computer Science Department. I was born and raised in Batken.
 
                     I am soon-to-be android developer. Always curious to learn new things. Nowodays I am doing my internship in local company in Kyrgyzstan.
                     
-                    I like to travel. I believe travelling gives you a new perspective to everything. You get to know a lot about the different cultures, the cuisines, their history, the language and all the small unique things every place has to offer.</h2>
+                    I like to travel. I believe travelling gives you a new perspective to everything. You get to know a lot about the different cultures, the cuisines, their history, the language and all the small unique things every place has to offer.
+                </h2>
             </div>
+            <button id="magic">Click to see the coolest guy ever</button>
         </div>
     </section>
-    <section id="portfolio">
+
+    <section id="projects">
         <h1 class="headings">Projects</h1>
         <div class="gallery">
             <img src="img/calculator_project.png" alt="">  
@@ -72,26 +76,46 @@
             <img src="img/main.png" alt="">  
         </div>
     </section>
+
     <section id="services">
         <h1 class="headings">SERVICES</h1>
             <div class="row">
                 <div class="box">
                     <img src="img/android-logo-E109D453E3-seeklogo.com.png" alt="">
-                    <h1 class="headings">Website design</h1>
+                    <h2 class="headings">Android Development</h2>
+                    <h4>Firebase, Bintray, MVVM, Single Activity Apps, Jetpack Component , Room Database, ADB Terminal, Fragments, Custom Views, Multi Modular Apps, Google Play Console, Android Profiler, Leak Canary, Maven Central</h4>
+                    <a href="https://www.youtube.com/watch?v=fis26HvvDII" id="link">Android Lecture</a>
                 </div>
                 <div class="box">
                     <img src="img/studio.png" alt="">
-                    <h1 class="headings">Android design</h1>
-
+                    <h2 class="headings">Android design</h2>
+                    <h4>Design kit (Figma), M2 guideline,Jetpack Compose Lists</h4>
+                    <a href="https://www.youtube.com/watch?v=KwpuAhYrIpU" id="link">Android design lecture</a>
                 </div>
                 <div class="box">
                     <img src="img/retrofit.png" alt="">
-                    <h1 class="headings">Digital Marketing</h1>
+                    <h2 class="headings">Tools development</h2>
+                    <h4>Build Gradle Plugins For Android, IDE Plugins, CLI's To Execute Environment Jobs Depends on OS With (Kotlin, Ruby, Groovy)</h4>
+                    <a href="https://www.youtube.com/watch?v=4JGvDUlfk7Y" id="link">Retrofit lecture</a>
                 </div>
                    
             </div>
         </h1>
     </section>
+
+    <section id="cats">
+        <h1 class="headings">You can't skip this page</h1>
+        <div class="results">
+            <div id ="cat_result"class="result">
+                <p>MEOW</p>
+            </div>
+        </div>
+       
+        <div class="buttons">
+            <button id="cat_btn">Get cuteness</button> 
+        </div>
+    </section>
+
     <section id="contact">
         <h1 class="headings">CONTACT</h1>
         <form action="" class="form">
@@ -102,8 +126,10 @@
             <input type="submit" value="SEND" id="send">
         </form>
     </section>
+    
+    
 
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>

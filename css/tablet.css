@@ -4,12 +4,12 @@
     font-size: 1.5.rem;
 
 }
-.main{
+#main{
     padding-left: 300px;
 
 }
 
-.main h1{
+#main h1{
     font-size: 20px;
     
 }
@@ -64,5 +64,14 @@
     left:0;
 
 }
+
+#about img{
+    height: 100%;
+}
+#about {
+    height: 40%;
+}
+
+
 
 

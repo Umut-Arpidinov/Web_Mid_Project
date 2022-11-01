@@ -4,12 +4,27 @@
     box-sizing: border-box;
 
 }
-
-html,body,nav{
-    scroll-behavior: smooth;
-}
-
 /* Navigation bar section*/
+.hamburger{
+    display: none;
+    margin-left: auto;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 6px;
+    background-color:white;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
 .navbar{
     display: flex;
     justify-content: center;
@@ -49,29 +64,28 @@ html,body,nav{
 /*Home Section*/
 
 #home{
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.5);
-    height: 840px;
-    justify-content: center;
-    align-items: center;
-    color: white;
-
-
-}
-#home::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right:0;
-
-    background: url('img/with_back.png') no-repeat center/cover ;
     height: 900px;
     width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+#home::after  {
+    content: "";
+    background: url(with_back.png) no-repeat center center/cover;
+    height: 900px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
     z-index: -1;
     opacity: .8;
 }
-.main{
+#main{
+    
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,23 +100,27 @@ html,body,nav{
     text-align: center;
     margin: 40px 0px;
 }
-.btn{
+#btn{
     padding:10px 35px;
+    border-radius: 10px;
     background-color: transparent;
     border: 1px solid white;
     color: white;
     outline: none;
     transition: .6s ease;
 }
-.btn:hover{
+#btn:hover{
     cursor: pointer;
     background-color: white;
     color: black;
     box-shadow: 0 0 5px white,0 0 10px white,0 0 15px white;
     font-weight: bold;
 }
+
+
 /*About section*/
 #about{
+
     display: flex;
     background-color: rgba(0, 0, 0, 0.8);
     flex-direction: column;
@@ -130,10 +148,25 @@ html,body,nav{
     font-size: 1.2rem
 
 }
-    
-/*Portfolio Section*/
 
-#portfolio{
+#magic{
+    padding:10px;
+    width: 60%;
+    height: 20%;
+    margin: 10px;
+    border:none;
+    border-radius: 15px;
+    outline:none; 
+}
+#magic:hover{
+    cursor:pointer;
+    box-shadow: 0 0 10px white;
+}
+    
+/*Projects Section*/
+
+#projects{
+ 
     display: flex;
     flex-direction:column;
     flex-wrap: wrap;
@@ -169,8 +202,9 @@ html,body,nav{
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.9);
     padding: 20px;
-
-
+}
+#services h1{
+  color: white;
 }
 
 .row{
@@ -209,9 +243,81 @@ html,body,nav{
 
 }
 
+  #link{
+    font-family:'Times New Roman', Times, serif;
+    padding:10px 35px;
+    background-color: transparent;
+    border: 3px solid green;
+    border-radius: 50px;
+    -webkit-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out;
+    color:black;    
+  }
+  #link:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+    border: 3px solid #00d7c3;
+  }
+
+
+
+/*Cats section*/
+#cats{
+    background-image: linear-gradient( 180deg,  rgba(247,247,247,1) 23.8%,  green  92% );
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100vh;
+	margin: 0;
+}
+
+.results {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.result {
+	background-color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+	height: 400px;
+	width: 300px;
+}
+.result img {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+button {
+    background-color:orange;
+    border: 0;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+}
+button:active {
+	transform: scale(0.98);
+}
+button:focus {
+	outline: none
+}
+
 /* Contact Section */
 
 #contact{
+   
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -255,26 +361,13 @@ html,body,nav{
     cursor:pointer;
     box-shadow: 0 0 10px white;
 }
-.hamburger{
-    display: none;
-    margin-left: auto;
-    cursor: pointer;
-}
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 6px;
-    background-color:white;
-    margin: 5px 0;
-    transition: 0.4s;
-}
-.change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-}
-.change .bar2 {opacity: 0;}
 
-.change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
-  }
+
+
+
+
+
+
   
 
 
