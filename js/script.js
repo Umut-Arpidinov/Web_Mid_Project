@@ -1,6 +1,10 @@
 const hamburger = document.querySelector(".hamburger")
 const magicButton = document.getElementById("magic")
+const navMenu = document.querySelector(".nav-menu")
+console.log(navMenu);
 const magicImage = document.getElementById("secondImage")
+const send = document.getElementById("send")
+
 
 
 hamburger.addEventListener("click",()=>{
@@ -38,4 +42,20 @@ function getRandomCat(){
 		.then(data => {
 			cat_result.innerHTML = `<img src=${data.file} alt="cat" />`
 		});
+}
+function showSnackbar() {
+    var snackBar = 
+      document.getElementById("snackbar")
+    // Dynamically Appending class
+    // to HTML element 
+    snackBar.className = "show-bar";
+  
+    setTimeout(function () {
+       // Dynamically Removing the Class 
+       // from HTML element
+       // By Replacing it with an Empty
+       // String after 5 seconds
+       snackBar.className = 
+          snackBar.className.replace("show-bar", ""); 
+    }, 5000);
 }
