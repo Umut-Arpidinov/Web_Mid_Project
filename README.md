@@ -2,10 +2,10 @@
 > This is my first project in WEB  that I wrote with understanding what is happening in shell
 
 ## Screenshots
-![Main page](screens/capacity.png)
-### Filter page
-![Filter page](screenshots/2.png)
-### Apply
+(screens/capacity.png)
+### Responsiven design
+(screens/responsive.png)
+(screens/responsive.prove.png)
 ![Apply](screenshots/3.png)
 ### Converted
 ![Applied](screenshots/4.png)
