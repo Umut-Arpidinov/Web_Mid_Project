@@ -1,6 +1,6 @@
 # My personal website
 ## This is my first project in WEB  that I wrote with understanding what is happening in shell
-## [Visite site](https://umut-arpidinov.github.io/Web_Final_Project/))
+## [Visite site](https://umut-arpidinov.github.io/Web_Final_Project/)
 # Screenshots
 
 ## Page speed
