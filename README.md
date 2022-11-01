@@ -1,15 +1,8 @@
 # My personal website
 > This is my first project in WEB  that I wrote with understanding what is happening in shell
 
-## Table of Contents
-* [Design](#Design)
-* [Page speed](#Page speed)
-* [Responsive design](Responsive design)
-* [Fetch API](#Fetch API)
-
-
 ## Screenshots
-![Main page](screenshots/1.png)
+![Main page](screens/capacity.png)
 ### Filter page
 ![Filter page](screenshots/2.png)
 ### Apply
