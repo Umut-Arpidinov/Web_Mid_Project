@@ -1,5 +1,5 @@
 # My personal website
-## This is my first project in WEB  that I wrote with understanding what is happening in shell
+## This is my first project in WEB  that I wrote with understanding what is happening.
 ## [Visite site](https://umut-arpidinov.github.io/Web_Mid_Project/)
 # Screenshots
 
