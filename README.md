@@ -1,13 +1,14 @@
 # My personal website
 > This is my first project in WEB  that I wrote with understanding what is happening in shell
 
-## Screenshots
+# Screenshots
 
 ## Page speed
 ![Apply](screens/capacity.png)
 
 ## Responsiven design
 ![Apply](screens/responsive.png)
+## Responsiven design
 ![Apply](screens/responsive.prove.png)
 
 ## Fetch API
@@ -20,5 +21,5 @@ Project is: _in progress_
 
 
 ## Contact
-Created by [github.com](https://github.com/Arpidinov)) - feel free to contact me!
+Created by [github.com](https://github.com/Umut-Arpidinov)) - feel free to contact me!
 
