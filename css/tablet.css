@@ -14,6 +14,11 @@
     
 }
 
+#home h2 {
+    font-size: xx-small;
+
+}
+
 /*About*/
 #pic{
     flex-direction: column;
